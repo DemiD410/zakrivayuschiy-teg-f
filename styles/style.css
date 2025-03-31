@@ -13,13 +13,13 @@
 .page {
   font-family: var(--variable-text, sans-serif);
   font-variation-settings: "wght" 400;
-  background-image: var(--bg-image);
+  background-image: var(--bg-patterns);
   background-color: var(--bg-color, #fff);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   min-inline-size: 375px;
-  min-block-size: 667px;
+  min-block-size: 100vh;
   line-height: normal;
 }
 
@@ -62,7 +62,7 @@
   font-variation-settings: var(--font-weight-bold, "wght" 700);
   font-size: var(--font-size, 18px);
   max-inline-size: 696px;
-  padding: 3px 24px 3px 10px;
+  padding: 5px 24px 5px 10px;
   outline: 2px solid var(--border-color, #000);
   background-color: var(--bg-color, #fff);
   line-height: 22px;
@@ -113,12 +113,8 @@
 }
 
 .content-text {
-  padding: 31px 23px 0px 23px;
+  padding: 29px 33px 0px 23px;
   line-height: 21px;
-}
-
-.now-text {
-  padding: 30px 33px 0px 23px;
 }
 
 .button {
@@ -232,20 +228,20 @@
 
 .card__icon-button:focus {
   outline: none;
+  transition: 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
   outline: 2px solid #000;
-  transition: 0.3s ease;
 }
 
 .button:focus {
   outline: none;
+  transition: 0.3s ease;
 }
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 0 #000;
-  transition: 0.3s ease;
 }
 
 .button::before {
@@ -382,25 +378,29 @@
 
 .header {
   max-inline-size: 371px;
-  margin-block-end: 104px;
+  margin-block-end: 98px;
   padding-block: clamp(120px, 10vw, 120px);
 }
 
-.dop-title {
+.header-title {
+  padding-block-end: 20px;
+}
+
+.article-title {
   margin-block-start: 4px;
 }
 
 .img {
   display: block;
-  max-block-size: 375px;
+  max-block-size: 370px;
 }
 
 .content-text {
-  padding: 26px 30px 0px 25px;
+  padding: 27px 30px 0px 25px;
 }
 
-.strategy-text {
-  padding: 28px 30px 0px 25px;
+.card-text {
+  margin-block-end: 48px;
 }
 
 .img-text {
@@ -409,8 +409,9 @@
 }
 
 .card-button-all {
-  margin-block-start: 5px;
+  margin-block-start: 7px;
 }
+
 
 .banner[open] {
   max-inline-size: 341px;
