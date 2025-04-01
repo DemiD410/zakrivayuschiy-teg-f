@@ -187,7 +187,6 @@
 
 .banner {
   max-inline-size: 356px;
-  
 }
 
 .banner-icon {
@@ -228,7 +227,6 @@
 
 .card__icon-button:focus {
   outline: none;
-  transition: 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
@@ -237,7 +235,6 @@
 
 .button:focus {
   outline: none;
-  transition: 0.3s ease;
 }
 
 .button:focus-visible {
@@ -271,6 +268,7 @@
   height: 34px;
   margin-block-start: 2px;
   background-color: transparent;
+  transition: 0.3s ease;
 }
 
 .sparks {
